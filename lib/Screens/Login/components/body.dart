@@ -50,13 +50,11 @@ class _BodyState extends State<Body> {
                   ),
                   SizedBox(height: size.height * 0.03),
                   RoundedInputField(
-
                     icon: Icons.phone,
                     hintText: "750xxxxxxx",
                     onChanged: (value) {
                       phone = value;
                     },
-
                   ),
                   RoundedButton(
                     text: S.of(context).loginText,
@@ -77,11 +75,10 @@ class _BodyState extends State<Body> {
                             context: context,
                             builder: (_) => AlertDialog(
                                     title: Text(S.of(context).warning),
-                                    content: Text(
-                                        S.of(context).unknownNO),
+                                    content: Text(S.of(context).unknownNO),
                                     actions: [
                                       new FlatButton(
-                                          child:  Text(S.of(context).okButton),
+                                          child: Text(S.of(context).okButton),
                                           onPressed: () => {Navigator.pop(_)}),
                                     ]),
                             barrierDismissible: false);
